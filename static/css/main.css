@@ -372,7 +372,7 @@ td.tb_result {
 
 #img {
     border: 1px solid black;
-    width: 80%;
+    width: 85%;
     height: auto;
 }
 
@@ -425,4 +425,14 @@ td.tb_result {
 
 #message {
     color: red;
+}
+
+.display-img {
+    height: 1000px;
+    min-width: 90%;
+}
+
+.header-search {
+    min-width: 90%;
+    margin-top: 40px;
 }
