@@ -18,10 +18,17 @@ $(document).ready(function() {
             contentType: 'application/json',
             success: function (response) {
                 if (!response.result) {
-                    $('#img').append('<img class="background-img" src="' + response.background1 + '">')
-                    $('#img').append('<img class="background-img" src="' + response.background2 + '">')
-                    $('#img').append('<img class="background-img" src="' + response.background3 + '">')
-                    $('#img').append('<img class="background-img" src="' + response.background4 + '">')
+                    let html = `
+                        <span class="num-title title">${numberImg}</span>
+                        <img class="background-img" src="${response.background1}">
+                        <span class="num-title title">${numberImg}</span>
+                        <img class="background-img" src="${response.background2}">
+                        <span class="num-title title">${numberImg}</span>
+                        <img class="background-img" src="${response.background3}">
+                        <span class="num-title title">${numberImg}</span>
+                        <img class="background-img" src="${response.background4}">
+                    `
+                    $('#img').append(html)
                     $('#message').text('')   
                 }
                 else {

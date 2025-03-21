@@ -330,6 +330,7 @@ p#result, #err_result {
 .container span {
     font-weight: bold;
     color: black;
+    border-radius: 5px;
 }
 
 td {
@@ -403,6 +404,7 @@ td.tb_result {
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
+    position: relative;
 }
 
 #search, #refresh {
@@ -435,4 +437,11 @@ td.tb_result {
 .header-search {
     min-width: 90%;
     margin-top: 40px;
+}
+
+.num-title {
+    position: absolute;
+    width: auto;
+    background-color: yellow;
+    padding: 5px 10px;
 }
